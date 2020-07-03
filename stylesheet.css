@@ -1,0 +1,98 @@
+.container {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+        "navbar  navbar navbar"
+        "sidebar main   main"
+        "footer  footer footer";
+}
+
+nav {
+    grid-area: navbar;
+    background-color: #253B4A;
+    color:white;
+    text-align: center;
+    
+    
+}
+
+aside {
+    grid-area: sidebar;
+    background-color: rgb(245, 243, 237);
+    background-image: url(img/dr.png);
+   
+    
+    
+}
+
+main {
+    grid-area: main;
+    background-color: #FF530D;
+    text-align: center;
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgb(107, 106, 192);
+}
+
+/* Initial styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    width: 100%;
+}
+
+nav, aside, main, footer {
+    color: #fff;
+    font-weight: 800;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 9rem 0;
+    margin: 0;
+}
+.nav-link{
+    display: grid;
+    padding: 0;
+    grid-template-columns: repeat(4,1fr);
+    color: white;
+    font-style: bold;
+    text-align: right;
+    
+    
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: contents;
+  }
+li {
+    display: inline;
+   
+  }
+  
+  li a {
+    display: block;
+    text-align: right;
+    padding: 8px;
+    background-color: #dddddd;
+  }
+
+.side{
+    width: 70px;
+}
+
+@media screen and (min-width: 620px){
+
+    body{
+     font-size: 20px;
+    
+    }
+}
+.text{
+    text-align: end;
+}
