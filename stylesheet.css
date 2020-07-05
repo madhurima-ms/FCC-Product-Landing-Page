@@ -20,7 +20,7 @@ nav {
 
 aside {
     grid-area: sidebar;
-    background-color: rgb(245, 243, 237);
+    background-color: rgb(104, 84, 23);
     background-image: url(img/dr.png);
    
     
@@ -36,6 +36,11 @@ main {
 footer {
     grid-area: footer;
     background-color: rgb(107, 106, 192);
+    background-image: url(img/ma.jpg);
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+
 }
 
 /* Initial styles */
@@ -101,12 +106,12 @@ li {
 }
   
  
-/* @media all (min-width: 620px){
+ @media screen and (max-width: 674px){
 
     body{
      font-size: 20px;
-    
+        width: 100%;
     }
-} */
+} 
 
 
